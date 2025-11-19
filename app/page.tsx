@@ -94,12 +94,9 @@ export default function Home() {
                     className="border-slate-700 bg-slate-700 text-white placeholder:text-gray-500"
                   />
                 </div>
-                <div className="space-y-3">
+                <div className="space-y-2">
                   <div className="flex items-center justify-between">
-                    <Label htmlFor="email-toggle" className="flex items-center gap-2">
-                      <Mail className="h-4 w-4" />
-                      Email
-                    </Label>
+                    <label className="text-sm text-gray-300">Email</label>
                     <Switch
                       id="email-toggle"
                       checked={emailEnabled}
@@ -111,15 +108,13 @@ export default function Home() {
                       value={email}
                       onChange={handleInputChange(setEmail)}
                       placeholder="Your email address"
+                      className="border-slate-700 bg-slate-700 text-white placeholder:text-gray-500"
                     />
                   )}
                 </div>
-                <div className="space-y-3">
+                <div className="space-y-2">
                   <div className="flex items-center justify-between">
-                    <Label htmlFor="sms-toggle" className="flex items-center gap-2">
-                      <MessageSquare className="h-4 w-4" />
-                      SMS
-                    </Label>
+                    <label className="text-sm text-gray-300">SMS</label>
                     <Switch
                       id="sms-toggle"
                       checked={smsEnabled}
@@ -131,15 +126,13 @@ export default function Home() {
                       value={sms}
                       onChange={handleInputChange(setSms)}
                       placeholder="Your phone number"
+                      className="border-slate-700 bg-slate-700 text-white placeholder:text-gray-500"
                     />
                   )}
                 </div>
-                <div className="space-y-3">
+                <div className="space-y-2">
                   <div className="flex items-center justify-between">
-                    <Label htmlFor="whatsapp-toggle" className="flex items-center gap-2">
-                      <Phone className="h-4 w-4" />
-                      WhatsApp
-                    </Label>
+                    <label className="text-sm text-gray-300">WhatsApp</label>
                     <Switch
                       id="whatsapp-toggle"
                       checked={whatsappEnabled}
@@ -151,11 +144,12 @@ export default function Home() {
                       value={whatsapp}
                       onChange={handleInputChange(setWhatsapp)}
                       placeholder="Your WhatsApp number"
+                      className="border-slate-700 bg-slate-700 text-white placeholder:text-gray-500"
                     />
                   )}
                 </div>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
 
             {/* Preview - Light Side */}
             <div className="bg-gray-50 p-8">
