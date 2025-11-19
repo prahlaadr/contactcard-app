@@ -21,7 +21,7 @@ export default function Home() {
 
   const handleInputChange = (setter: (value: string) => void) => {
     return (e: ChangeEvent<HTMLInputElement>) => {
-      setter(e.currentTarget.value);
+      setter((e.currentTarget as HTMLInputElement).value);
     };
   };
 
