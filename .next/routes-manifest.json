@@ -21,6 +21,22 @@
   },
   "dynamicRoutes": [
     {
+      "page": "/api/cards/[id]",
+      "regex": "^/api/cards/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/cards/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/card/[slug]",
+      "regex": "^/card/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPslug": "nxtPslug"
+      },
+      "namedRegex": "^/card/(?<nxtPslug>[^/]+?)(?:/)?$"
+    },
+    {
       "page": "/sign-in/[[...sign-in]]",
       "regex": "^/sign\\-in(?:/(.+?))?(?:/)?$",
       "routeKeys": {
@@ -55,6 +71,24 @@
       "regex": "^/_not\\-found(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/api/cards",
+      "regex": "^/api/cards(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/cards(?:/)?$"
+    },
+    {
+      "page": "/dashboard",
+      "regex": "^/dashboard(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashboard(?:/)?$"
+    },
+    {
+      "page": "/editor",
+      "regex": "^/editor(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/editor(?:/)?$"
     }
   ],
   "dataRoutes": [],

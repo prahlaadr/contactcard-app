@@ -1,6 +1,11 @@
 {
   "/_global-error/page": "app/_global-error/page.js",
   "/_not-found/page": "app/_not-found/page.js",
+  "/api/cards/[id]/route": "app/api/cards/[id]/route.js",
+  "/api/cards/route": "app/api/cards/route.js",
+  "/card/[slug]/page": "app/card/[slug]/page.js",
+  "/dashboard/page": "app/dashboard/page.js",
+  "/editor/page": "app/editor/page.js",
   "/page": "app/page.js",
   "/sign-in/[[...sign-in]]/page": "app/sign-in/[[...sign-in]]/page.js",
   "/sign-up/[[...sign-up]]/page": "app/sign-up/[[...sign-up]]/page.js"

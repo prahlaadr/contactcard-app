@@ -1,6 +1,11 @@
 {
   "/_global-error/page": "/_global-error",
   "/_not-found/page": "/_not-found",
+  "/api/cards/[id]/route": "/api/cards/[id]",
+  "/api/cards/route": "/api/cards",
+  "/card/[slug]/page": "/card/[slug]",
+  "/dashboard/page": "/dashboard",
+  "/editor/page": "/editor",
   "/page": "/",
   "/sign-in/[[...sign-in]]/page": "/sign-in/[[...sign-in]]",
   "/sign-up/[[...sign-up]]/page": "/sign-up/[[...sign-up]]"
